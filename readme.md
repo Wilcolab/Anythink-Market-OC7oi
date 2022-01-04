@@ -1,6 +1,9 @@
 # Welcome to the Anythink Market repo
 
-To start the app use: `yarn start`, it'll start both the backend and the frontend.
+first thing to do, make sure you have yarn installed
+to install all dependecies, run in cmd: 
+`yarn install`
+To start the app use: `yarn start` or `yarn start-win` for windows, it'll start both the backend and the frontend.
 
 Please find more info about each part in the relevant Readme file ([frontend](frontend/readme.md) and [backend](backend/README.md)).
 
