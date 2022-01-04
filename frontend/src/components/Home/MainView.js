@@ -85,7 +85,7 @@ const MainView = (props) => {
           <TagFilterTab tag={props.tag} />
         </ul>
       </div>
-      <h1>test header</h1>
+      <h1>Test Header</h1>
       <ItemList
         pager={props.pager}
         items={props.items}
