@@ -24,16 +24,38 @@ seeder.connect('mongodb://localhost:27017', function() {
 });
  
 // Data array containing seed data - documents organized by Model
-var data = [
-    {
-        'model': 'Item',
-        'documents': [
-            {'title': "i1",
+
+const users = []
+const items = []
+
+for (var i=0 ; i<100; i++){
+    users.push({
+        'username': `username${i}`,
+        'email': `ex${i}@email.com`,
+        'bio': 'bio',
+        'image': 'image',
+    })
+
+}
+for (var i=0 ; i<100; i++){
+    items.push(
+        {'title': `i${i}`,
             'description': "d1",
             'body': "b1",
             'tagList': ["dragons"]
             }
-        ]
+    )
+
+}
+var data = [
+    {
+        'model': 'Item',
+        'documents': items
+    },
+    {
+        'model': 'User',
+        'documents': users
+        
     }
 ];
 
