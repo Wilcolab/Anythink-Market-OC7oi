@@ -27,6 +27,8 @@ seeder.connect(process.env.MONGODB_URI, function() {
 
 const users = []
 const items = []
+const comments = []
+
 
 for (var i=0 ; i<105; i++){
     users.push({
@@ -42,6 +44,11 @@ for (var i=0 ; i<105; i++){
             'tagList': ["dragons"]
             }
     )
+    comments.push(
+    {
+        id: i,
+        body: `comment${i}`,
+    })
 
 }
 var data = [
@@ -53,6 +60,10 @@ var data = [
         'model': 'User',
         'documents': users
         
+    },
+    {
+        'model':'Comment',
+        'documents':comments
     }
 ];
 
