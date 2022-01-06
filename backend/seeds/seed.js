@@ -28,16 +28,13 @@ seeder.connect('mongodb://localhost:27017', function() {
 const users = []
 const items = []
 
-for (var i=0 ; i<100; i++){
+for (var i=0 ; i<105; i++){
     users.push({
         'username': `username${i}`,
         'email': `ex${i}@email.com`,
-        'bio': 'bio',
+        'bio': `bio${i}`,
         'image': 'image',
     })
-
-}
-for (var i=0 ; i<100; i++){
     items.push(
         {'title': `i${i}`,
             'description': "d1",
