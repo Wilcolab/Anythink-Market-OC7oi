@@ -1,4 +1,4 @@
- 
+require("dotenv").config(); 
 var seeder = require('mongoose-seed');
  
 // Connect to MongoDB via Mongoose

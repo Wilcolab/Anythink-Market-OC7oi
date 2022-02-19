@@ -34,6 +34,7 @@
   },
   "scripts": {
     "start": "REACT_APP_WILCO_ID=\"$(cat ../.wilco)\" react-scripts start",
+    "start-win": "SET REACT_APP_WILCO_ID=61d3559592960251b7898104 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
